@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ua">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, maximum-scale=1, initial-scale=1">
+    <title>IT for Medicine</title>
+    <!--build:css css/all.css-->
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--endbuild-->
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="wrapper"  class="main-wrapper" role="main">
+
+    <ul class="nav nav-tabs main-tab" role="tablist">
+        <li class="nav-item"> <a class="logo" href="/"><img src="img/logo/logo.svg" alt="logo"></a></li>
+        <li class="nav-item"><a href="#tab-cart" class="nav-link active" role="tab" data-toggle="tab">Карта пацієнта</a></li>
+        <li class="nav-item"><a href="#tab-reception" class="nav-link" role="tab" data-toggle="tab">Прийом</a></li>
+    </ul>
+
+    <div class="tab-content main-content">
+        <div class="tab-pane fade show active" id="tab-cart">
+            //= template/cart.html
+        </div>
+        <div class="tab-pane fade" id="tab-reception">
+            //= template/reception.html
+        </div>
+    </div>
+
+</div>
+
+//= template/modal.html
+<script type="text/javascript" src="js/all.js"></script>
+</body>
+</html>

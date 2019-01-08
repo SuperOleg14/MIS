@@ -1,0 +1,29 @@
+.reception{
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+  .patient-wrap{
+    padding: 20px 0;
+
+    .patient-name{
+      font-size: 18px;
+      color: $black;
+    }
+
+    .patient-time{
+      color: $black;
+      background: #fff url("../img/icons/ic_time.svg") no-repeat 12px center;
+      background-size: 20px;
+      border-radius: 35px;
+      padding: 10px 12px 10px 39px;
+      line-height: 20px;
+    }
+    .patient-print{
+      padding: 20px;
+      border-radius: 50%;
+      background: white url("../img/icons/ic_print.svg") no-repeat center;
+      background-size: 19px;
+      margin-left: 50px;
+    }
+  }
+}
