@@ -164,12 +164,21 @@ body{
   background: linear-gradient(90deg, #3AD0DA -2.5%, #51E5DC 144.78%);
   box-shadow: 0 2px 5px rgba(30, 209, 209, 0.18);
   border-radius: 25px;
+  transition: .4s;
+  &:hover{
+    color: white;
+    background: linear-gradient(90deg, #51E5DC 144.78%, #3AD0DA -2.5%);
+  }
 }
 
 .btn-orange{
   background: linear-gradient(90deg, #FEC34D -2.5%, #FAD58C 160.23%);
   box-shadow: 0px 2px 5px rgba(239, 203, 74, 0.18);
   border-radius: 25px;
+  &:hover{
+    color: white;
+    background: linear-gradient(90deg, #FAD58C 160.23%, #FEC34D -2.5%);
+  }
 }
 
 .block-title{

@@ -1,14 +1,15 @@
-<div class="modal fade" id="delete-visit" tabindex="-1" role="dialog" aria-labelledby="deleteVisitModalTitle" aria-hidden="true">
+<!--<div class="modal fade" id="delete-visit" tabindex="-1" role="dialog" aria-labelledby="deleteVisitModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered delete-visit" role="document">
         <div class="modal-content">
-<!--            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>-->
+            &lt;!&ndash;            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>&ndash;&gt;
             <div class="modal-body">
-                Ви дійсно бажаєте видалити цей прийом?
+                <p class="modal-body-title">Ви дійсно бажаєте видалити цей прийом?</p>
+                <p class="modal-body-desc">(Всі введені дані будуть видалені)</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn-confirm modal-btn">Так</button>
@@ -16,6 +17,96 @@
             </div>
         </div>
     </div>
+</div>-->
+
+<div class="modal fade" id="delete-visit" tabindex="-1" role="dialog" aria-labelledby="deleteVisitModalTitle" aria-hidden="true">
+    <!--УДАЛИТЬ КЛАССЫ 2 ПОСЛЕДНИХ-->   <div class="modal-dialog modal-dialog-centered delete-visit modal-personal-edit" role="document"><!--УДАЛИТЬ КЛАССЫ 2 ПОСЛЕДНИХ-->
+        <div class="modal-content">
+            <div class="modal-header grey-bg display-flex">
+                <h5 class="modal-title" id="exampleModalLongTitle">Видалення прийому</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Дата
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="21.12.2018" readonly>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Заключення
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="Носові шляхи вільні, горло рожеве, температура в нормі" readonly>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Причина
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <select>
+                                <option selected>Вилікуваний</option>
+                                <option>не вилікуваний</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-confirm modal-btn btn-blue">Видалити</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="delete-episode" tabindex="-1" role="dialog" aria-labelledby="deleteEpisodeModalTitle" aria-hidden="true">
+    <!--УДАЛИТЬ КЛАССЫ 2 ПОСЛЕДНИХ-->   <div class="modal-dialog modal-dialog-centered modal-personal-edit" role="document"><!--УДАЛИТЬ КЛАССЫ 2 ПОСЛЕДНИХ-->
+    <div class="modal-content">
+        <div class="modal-header grey-bg display-flex">
+            <h5 class="modal-title" id="episodeModalLongTitle">Видалення епізоду</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-block-item">
+                <div class="modal-item-left">
+                    <h3 class="modal-block-title">
+                        Дата
+                    </h3>
+                    <p class="modal-input-wrap">
+                        <input type="text" class="modal-input" value="21.12.2018" readonly>
+                    </p>
+                </div>
+            </div>
+            <div class="modal-block-item">
+                <div class="modal-item-left">
+                    <h3 class="modal-block-title">
+                        Причина відкликання запису
+                    </h3>
+                    <p class="modal-input-wrap">
+                        <input type="text" class="modal-input" value="Механічна помилка" readonly>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn-confirm modal-btn btn-blue">Видалити</button>
+        </div>
+    </div>
+</div>
 </div>
 
 <div class="modal fade" id="personal-info" tabindex="-1" role="dialog" aria-labelledby="personalInfoModalTitle" aria-hidden="true">
@@ -28,7 +119,62 @@
                 </button>
             </div>
             <div class="modal-body">
-                Ви дійсно бажаєте видалити цей прийом?
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            ПІБ пацієнта
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="Мартиненко Валентина Петрівна">
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Телефон
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="+38 067 99 88">
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            E-mail
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="martynenko@gmail.com">
+                        </p>
+                    </div>
+                    <div class="modal-item-right display-flex">
+                        <button type="button" class="modal-add">+</button>
+                    </div>
+                </div>
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Адреса
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="м. Кіїв, вул. Довженко 36, кв. 23">
+                        </p>
+                    </div>
+                    <div class="modal-item-right display-flex">
+                        <button type="button" class="modal-add">+</button>
+                    </div>
+                </div>
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Дата народження
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="16.12.1975 (41 рік)">
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn-confirm modal-btn btn-blue" data-dismiss="modal">Зберегти</button>
@@ -71,6 +217,25 @@
             <div class="modal-footer">
                 <button type="button" class="btn-confirm modal-btn btn-blue" data-dismiss="modal">Зберегти</button>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="blood-test" tabindex="-1" role="dialog" aria-labelledby="bloodTestModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-personal-edit" role="document">
+        <div class="modal-content">
+<!--            <div class="modal-header grey-bg display-flex">
+                <h5 class="modal-title" id="bloodTestCenterTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>-->
+            <div class="modal-body">
+                Аналіз крові <span class="tab-info-year">21.12.2018</span>
+            </div>
+           <!-- <div class="modal-footer">
+                <button type="button" class="btn-confirm modal-btn btn-blue" data-dismiss="modal">Зберегти</button>
+            </div>-->
         </div>
     </div>
 </div>

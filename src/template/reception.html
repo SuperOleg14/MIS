@@ -1,6 +1,6 @@
-<section class="reception">
+<div class="reception-header">
     <div class="patient-wrap display-flex">
-        <span class="patient-name">Мартиненко Валентина Петрівна</span>
+        <span class="patient-name">Мартиненко Валентина Петрівна  <span class="tab-info-year birthday"> 16.12.1975 </span> <span class="tab-info-year age">(41 рік)</span></span>
         <div class="patient-btn-time display-flex">
             <span class="patient-time">
                 13.45
@@ -8,6 +8,584 @@
             <a href="#" class="patient-print"></a>
             <a href="#" class="btn-n btn-orange btn-write">Попередній перегляд</a>
             <a href="#" class="btn-n btn-blue btn-write">Закінчити прийом</a>
+        </div>
+    </div>
+    <div class="reception-block">
+        <div class="reception-block-tab">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="complaints-tab" data-toggle="tab" href="#complaints" role="tab" aria-controls="complaints" aria-selected="true">
+                        <div class="reception-nav-icon">
+                            <img src="../img/icons/ic_complaints.svg"  style="width: 29px; height: 29px">
+                        </div>
+                        Скарги
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">
+                        <div class="reception-nav-icon">
+                            <img src="../img/icons/ic_review.svg" style="width: 27px; height: 26px">
+                        </div>
+                        Огляд
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="diagnosis-tab" data-toggle="tab" href="#diagnosis" role="tab" aria-controls="diagnosis" aria-selected="false">
+                        <div class="reception-nav-icon">
+                            <img src="../img/icons/ic_diagnosis.svg" style="width: 25px; height: 28px">
+                        </div>
+                        Діагноз
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="actions-tab" data-toggle="tab" href="#actions" role="tab" aria-controls="actions" aria-selected="false">
+                        <div class="reception-nav-icon">
+                            <img src="../img/icons/ic_action.svg" style="width: 29px; height: 29px">
+                        </div>
+                        Дії
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="referral-tab" data-toggle="tab" href="#referral" role="tab" aria-controls="referral" aria-selected="false">
+                        <div class="reception-nav-icon">
+                            <img src="../img/icons/ic_direction.svg" style="width: 29px; height: 29px">
+                        </div>
+                        Направлення
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="appointment-tab" data-toggle="tab" href="#appointment" role="tab" aria-controls="appointment" aria-selected="false">
+                        <div class="reception-nav-icon">
+                            <img src="../img/icons/ic_appointment.svg" style="width: 30px; height: 28px">
+                        </div>
+                        Назначення
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="documents-tab" data-toggle="tab" href="#documents" role="tab" aria-controls="documents" aria-selected="false">
+                        <div class="reception-nav-icon">
+                            <img src="../img/icons/ic_document.svg" style="width: 25px; height: 28px">
+                        </div>
+                        Документи
+                    </a>
+                </li>
+            </ul>
+            <div class="reception-tab-search">
+                <input type="text" class="main-search" id="reception-search" name="reception-search" placeholder="Пошук">
+                <input type="text" class="main-search add" id="reception-add" name="reception-add" placeholder="Додати запис">
+            </div>
+        </div>
+        <div class="reception-block-info">
+            <div class="reception-block-info-title">Прийом</div>
+            <div class="reception-tab-search">
+                <a href="#" class="btn-n btn-blue btn-write">Створити новий епізод</a>
+                <input type="text" class="main-search" id="reception-info-search" name="reception-info-search" placeholder="Пошук епізода">
+            </div>
+        </div>
+    </div>
+</div>
+<section class="reception">
+    <div class="reception-accordion">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="complaints" role="tabpanel" aria-labelledby="complaints-tab">
+                <div class="reception-accordion-title">Довідник</div>
+                <div class="accordion" id="accordionComplaints">
+                    <div class="card">
+                        <div class="card-header" id="heading-1">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                                    <span>A</span> Загальні та неспецифічні
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                 <ul class="directory-list">
+                                     <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                     <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                     <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                     <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                     <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                     <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                     <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                     <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                     <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                     <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-2">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                    <span>B</span> Кров, кровотворні організми та імунна система
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                <ul class="directory-list">
+                                    <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-3">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                    <span>D</span> Око
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                <ul class="directoty-list">
+                                    <ul class="directory-list">
+                                        <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-4">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                    <span>H</span> Вухо
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                <ul class="directoty-list">
+                                    <ul class="directory-list">
+                                        <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-5">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                    <span>K</span> Серцево-судинна система
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                <ul class="directoty-list">
+                                    <ul class="directory-list">
+                                        <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                        <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-6">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+                                    <span>L</span> Опорно-рухова система
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-6" class="collapse" aria-labelledby="heading-6" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                <ul class="directory-list">
+                                    <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-7">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+                                    <span>N</span> Нервова система
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-7" class="collapse" aria-labelledby="heading-7" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                <ul class="directory-list">
+                                    <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-8">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+                                    <span>P</span> Психологічні проблеми
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-8" class="collapse" aria-labelledby="heading-8" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                <ul class="directory-list">
+                                    <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-9">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+                                    <span>R</span> Дихальна система
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-9" class="collapse" aria-labelledby="heading-9" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                <ul class="directory-list">
+                                    <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-10">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">
+                                    <span>S</span> Шкіряна система
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse-10" class="collapse" aria-labelledby="heading-10" data-parent="#accordionComplaints">
+                            <div class="card-body">
+                                <ul class="directory-list">
+                                    <li><span class="main-list">К01  Біль у серці</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К02  Стискання в області серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К03  Біль пов язаний з ССС БДУ</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К04  Серцебиття</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К05  Порушення серцевого ритму</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К06  Незвично помітні вени</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К07  Опухлі щиколотки / набряки</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К22  Фактор ризику ХСК</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К24  Страх перед хворобою серця</span> <span class="list-edit"></span></li>
+                                    <li><span class="main-list">К25  Страх гіпертонії</span><span class="list-edit"></span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">...</div>
+            <div class="tab-pane fade" id="diagnosis" role="tabpanel" aria-labelledby="diagnosis-tab">...</div>
+            <div class="tab-pane fade" id="actions" role="tabpanel" aria-labelledby="actions-tab">
+                <div class="reception-accordion-title">Довідник</div>
+                <ul class="reception-actions-block">
+                    <li><span class="recept-act-number">44</span> Імунізація/профілактичне лікування</li>
+                    <li><span class="recept-act-number">45</span> Нагляд/навчання/консльтація/дієта</li>
+                    <li><span class="recept-act-number">46</span> Консультація з лікарем ПМСД</li>
+                    <li><span class="recept-act-number">47</span> Уточнення/обговорення причини звернення</li>
+                    <li><span class="recept-act-number">48</span> Інші профілактичні процедури</li>
+                    <li><span class="recept-act-number">49</span> Розсічення/дренаж/промивання/сапірація</li>
+                    <li><span class="recept-act-number">49</span> Видалення тканини/біопсія/санація</li>
+                    <li><span class="recept-act-number">44</span> Імунізація/профілактичне лікування</li>
+                    <li><span class="recept-act-number">45</span> Нагляд/навчання/консльтація/дієта</li>
+                    <li><span class="recept-act-number">46</span> Консультація з лікарем ПМСД</li>
+                    <li><span class="recept-act-number">47</span> Уточнення/обговорення причини звернення</li>
+                    <li><span class="recept-act-number">48</span> Інші профілактичні процедури</li>
+                    <li><span class="recept-act-number">49</span> Розсічення/дренаж/промивання/сапірація</li>
+                    <li><span class="recept-act-number">49</span> Видалення тканини/біопсія/санація</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="referral" role="tabpanel" aria-labelledby="referral-tab">...</div>
+            <div class="tab-pane fade" id="appointment" role="tabpanel" aria-labelledby="appointment-tab">...</div>
+            <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">...</div>
+        </div>
+    </div>
+    <div class="reception-bg">
+        <div class="reception-episode">
+            <div class="accordion" id="accordionEpisode">
+                <div class="card">
+                    <div class="card-header" id="episodeOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#episode-1" aria-expanded="false" aria-controls="episode-1">
+                                Новий епізод
+                            </button>
+                            <span class="reception-episode-btn">
+                                <button type="button" class="close-reception subnav-btn">Закрити</button>
+                                <button type="button" class="cancel-reception subnav-btn">Відмінити</button>
+                            </span>
+                        </h2>
+                    </div>
+
+                    <div id="episode-1" class="collapse" aria-labelledby="episodeOne" data-parent="#accordionEpisode">
+                        <div class="card-body">
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Скарги
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>К06  Незвично помітні вени <span class="episode-close"></span></li>
+                                    <li>К07  Опухлі щиколотки/набряки<span class="episode-close"></span>
+                                        <span class="episode-desc">(Дуже явно виражені)<span class="episode-desc-close"></span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Огляд
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li><span class="episode-finish-info-title">Стан:</span> середнього ступеня важкості <span class="episode-close"></span></li>
+                                    <li><span class="episode-finish-info-title">Слух:</span> нормальний <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Діагноз
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>D70 Шлунково-кишечна інфекція <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Дії
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>44 Імунізація/профілактичне лікування <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Направлення
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>5312 ANA - профіль (Блот аналіз) <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Назначення
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>Ваксігріп Тетра <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="episodeTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#episode-2" aria-expanded="false" aria-controls="episode-2">
+                                К87 Гіпертонія з ускладненням
+                            </button>
+                            <span class="reception-episode-btn">
+                                <button type="button" class="close-reception subnav-btn">Закрити</button>
+                                <button type="button" class="cancel-reception subnav-btn">Відмінити</button>
+                            </span>
+                        </h2>
+                    </div>
+                    <div id="episode-2" class="collapse" aria-labelledby="episodeTwo" data-parent="#accordionEpisode">
+                        <div class="card-body">
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Скарги
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>К06  Незвично помітні вени <span class="episode-close"></span></li>
+                                    <li>К07  Опухлі щиколотки/набряки<span class="episode-close"></span>
+                                        <span class="episode-desc">(Дуже явно виражені)<span class="episode-desc-close"></span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Огляд
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li><span class="episode-finish-info-title">Стан:</span> середнього ступеня важкості <span class="episode-close"></span></li>
+                                    <li><span class="episode-finish-info-title">Слух:</span> нормальний <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Діагноз
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>D70 Шлунково-кишечна інфекція <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Дії
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>44 Імунізація/профілактичне лікування <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Направлення
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>5312 ANA - профіль (Блот аналіз) <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Назначення
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>Ваксігріп Тетра <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="episodeThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#episode-3" aria-expanded="false" aria-controls="episode-3">
+                                Т90 Інсулінозалежний цукровий діабет
+                            </button>
+                            <span class="reception-episode-btn">
+                                <button type="button" class="close-reception subnav-btn">Закрити</button>
+                                <button type="button" class="cancel-reception subnav-btn">Відмінити</button>
+                            </span>
+                        </h2>
+                    </div>
+                    <div id="episode-3" class="collapse" aria-labelledby="episodeThree" data-parent="#accordionEpisode">
+                        <div class="card-body">
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Скарги
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>К06  Незвично помітні вени <span class="episode-close"></span></li>
+                                    <li>К07  Опухлі щиколотки/набряки<span class="episode-close"></span>
+                                        <span class="episode-desc">(Дуже явно виражені)<span class="episode-desc-close"></span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Огляд
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li><span class="episode-finish-info-title">Стан:</span> середнього ступеня важкості <span class="episode-close"></span></li>
+                                    <li><span class="episode-finish-info-title">Слух:</span> нормальний <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Діагноз
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>D70 Шлунково-кишечна інфекція <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Дії
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>44 Імунізація/профілактичне лікування <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Направлення
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>5312 ANA - профіль (Блот аналіз) <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                            <div class="recept_episode-finish">
+                                <h3 class="episode-finish-title">
+                                    Назначення
+                                </h3>
+                                <ul class="episode-finish-info">
+                                    <li>Ваксігріп Тетра <span class="episode-close"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

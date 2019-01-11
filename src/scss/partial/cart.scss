@@ -1,78 +1,18 @@
-//.cart{
-//  position: relative;
-//  width: 100%;
-//  padding-top: 60px;
-//
-//  .nav-cart{
-//    //padding: 10px 15px;
-//
-//    .nav-link{
-//      margin-right: 20px;
-//      width: 140px;
-//      padding: 11px 0;
-//      text-align: center;
-//      display: block;
-//      color: $grey;
-//      border-radius: 25px;
-//      background: transparent;
-//      border: 1px solid #E8EDF3;
-//
-//      &.active, &:hover{
-//        background: linear-gradient(90deg, #3AD0DA -2.5%, #51E5DC 144.78%);
-//        color: #fff;
-//        border: none;
-//      }
-//    }
-//
-//    .nav-item:last-child .nav-link{
-//      margin-right: 0;
-//    }
-//  }
-//  .patient-wrap{
-//    padding: 20px 0;
-//
-//    .patient-name{
-//      font-size: 18px;
-//      color: $black;
-//    }
-//
-//    .patient-time{
-//      color: $black;
-//      background: #fff;
-//      border-radius: 35px;
-//      padding: 10px 12px 10px 39px;
-//      line-height: 20px;
-//    }
-//
-//
-//  }
-//
-//  .cart-content{
-//    padding: 20px;
-//    background: #fff;
-//  }
-//  .cart-item-title{
-//    line-height: 18px;
-//    color: $black;
-//    font-family: 'pt_sansbold', sans-serif;
-//    font-weight: bold;
-//  }
-//  .subnav-cart{
-//    padding: 0 20px;
-//
-//    .nav-link{
-//      line-height: 18px;
-//      color: $grey;
-//
-//      &.active{
-//        color: $black;
-//      }
-//    }
-//  }
-//}
+.fixed-tab{
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  z-index: 2;
 
+  .tab-container{
+    padding: 0 40px;
+  }
+}
 
-
+.tab-info-year {
+  color: #A4A7AB;
+}
 .grey-bg{
   background: #FAFAFA;
   border-radius: 2px 2px 0px 0px;text-align: left;
@@ -80,6 +20,71 @@
   font: 16px/34px 'pt_sansregular',sans-serif;
   color: #000;
 }
+
+.head-menu{
+  border-radius: 2px;
+
+  .tab-search{
+    max-width: 400px;
+    width: 100%;
+    .main-search{
+      width: 100%;
+      border: 1px solid #E6EAED;
+      border-radius: 22.5px;
+      background: #fff url("../img/icons/ic_search.svg") no-repeat 12px center;
+      background-size: 13px 14px;
+      padding: 10px 20px 10px 45px;
+      font: 16px/1 'pt_sansregular', sans-serif;
+      outline: none;
+    }
+  }
+}
+
+.nav-cart{
+  //padding: 10px 15px;
+
+  .nav-link{
+    margin-right: 20px;
+    width: 140px;
+    padding: 11px 0;
+    text-align: center;
+    display: block;
+    color: $grey;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid #E8EDF3;
+
+    &.active, &:hover{
+      background: linear-gradient(90deg, #3AD0DA -2.5%, #51E5DC 144.78%);
+      color: #fff;
+      //border: none;
+    }
+  }
+
+  .nav-item:last-child .nav-link{
+    margin-right: 0;
+  }
+}
+.patient-wrap{
+  background: #E5E5E5;
+  padding: 20px 0;
+
+  .patient-name{
+    font-size: 18px;
+    color: $black;
+  }
+
+  .patient-time{
+    color: $black;
+    background: #fff url("../img/icons/ic_time.svg") no-repeat 12px center;
+    background-size: 20px;
+    border-radius: 35px;
+    padding: 10px 12px 10px 39px;
+    line-height: 20px;
+  }
+}
+
+
 .subnav-content-text{
   font: 16px/18px 'pt_sansregular',sans-serif;
   color: #A4A7AB;
@@ -87,78 +92,13 @@
 .cart{
   position: relative;
   width: 100%;
-  padding-top: 60px;
-
-  .head-menu{
-    border-radius: 2px;
-
-    .tab-search{
-      max-width: 400px;
-      width: 100%;
-      .main-search{
-        width: 100%;
-        border: 1px solid #E6EAED;
-        border-radius: 22.5px;
-        background: #fff url("../img/icons/ic_search.svg") no-repeat 12px center;
-        background-size: 13px 14px;
-        padding: 10px 20px 10px 45px;
-        font: 16px/1 'pt_sansregular', sans-serif;
-        outline: none;
-      }
-    }
-  }
-
-  .nav-cart{
-    //padding: 10px 15px;
-
-    .nav-link{
-      margin-right: 20px;
-      width: 140px;
-      padding: 11px 0;
-      text-align: center;
-      display: block;
-      color: $grey;
-      border-radius: 25px;
-      background: transparent;
-      border: 1px solid #E8EDF3;
-
-      &.active, &:hover{
-        background: linear-gradient(90deg, #3AD0DA -2.5%, #51E5DC 144.78%);
-        color: #fff;
-        //border: none;
-      }
-    }
-
-    .nav-item:last-child .nav-link{
-      margin-right: 0;
-    }
-  }
-  .patient-wrap{
-    padding: 20px 0;
-
-    .patient-name{
-      font-size: 18px;
-      color: $black;
-    }
-
-    .tab-info-year {
-      color: #A4A7AB;
-    }
-
-    .patient-time{
-      color: $black;
-      background: #fff url("../img/icons/ic_time.svg") no-repeat 12px center;
-      background-size: 20px;
-      border-radius: 35px;
-      padding: 10px 12px 10px 39px;
-      line-height: 20px;
-    }
-  }
+  padding-top: 248px;
+  //height: calc(100vh - 248px);
 
   .cart-content{
     padding: 0;
     background: transparent;
-    margin-top: 20px;
+    //margin-top: 20px;
   }
   .cart-item-title{
     padding: 0 40px 0 20px;
@@ -174,7 +114,7 @@
     .nav-link{
       line-height: 18px;
       //margin-bottom: 20px;
-      padding: 10px 82px 10px 0;
+      padding: 10px 37px 10px 0;
       border-right: 3px solid transparent;
       color: #A4A7AB;
 
@@ -200,32 +140,6 @@
     }
   }
 
-  .subnav-btn-wrap{
-    display: flex;
-    align-items: center;
-    margin: 30px 0 30px 20px;
-
-    .subnav-btn{
-      font: 16px/32px 'pt_sansregular',sans-serif;
-      color: #A4A7AB;
-      padding: 4px 26px;
-      background: transparent;
-      border-radius: 25px;
-      border: 1px solid #E8EDF3;
-
-      &:hover{
-        background: linear-gradient(90deg, #3AD0DA -2.5%, #51E5DC 144.78%);
-        color: #fff;
-      }
-    }
-
-    .repeat-visit{
-      padding-left: 18px;
-      padding-right: 18px;
-      margin-right: 20px;
-    }
-  }
-
   .tab-pane-block{
     padding: 0;
     display: flex;
@@ -243,12 +157,83 @@
       padding: 0;
       background: #fff;
       border-radius: 0px 0px 2px 2px;
+      height: calc(100vh - 289px);
+      overflow-y: scroll;
     }
   }
   .subnav-content{
     width: 57%;
     background: #FAFAFA;
-    padding: 40px;
+    padding: 0 0 40px;
+
+    .subnav-btn-wrap{
+      //display: flex;
+      //align-items: center;
+      border-bottom: 1px solid #E6EAED;
+      padding: 14px 20px;
+      margin-bottom: 30px;
+
+      .subnav-btn-left{
+        max-width: 550px;
+        width: 100%;
+      }
+
+      .subnav-btn-right{
+        max-width: 100px;
+        width: 100%;
+      }
+
+      .subnav-btn{
+        font: 16px/19px 'pt_sansregular',sans-serif;
+        color: #A4A7AB;
+        padding: 10px 0;
+        background: transparent;
+        border-radius: 25px;
+        border: 1px solid #E8EDF3;
+        max-width: 170px;
+        width: 100%;
+        margin-right: 20px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+        &:hover{
+          background: linear-gradient(90deg, #3AD0DA -2.5%, #51E5DC 144.78%);
+          color: #fff;
+        }
+      }
+
+      .subnav-btn-link{
+        //background: #FAFAFA;
+        border: 1px solid #E6EAED;
+        box-sizing: border-box;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+
+      .subnav-btn-download{
+        background: url("../img/icons/ic_load.svg") no-repeat center;
+        background-size: 19px 17px;
+      }
+
+      .subnav-btn-print{
+        background: url("../img/icons/ic_print.svg") no-repeat center;
+        background-size: 19px 17px;
+      }
+    }
+
+    .tab-pane{
+      //padding: 0 40px;
+      //height: calc(100vh - 338px);
+    }
+
+    .tab-pane-scroll{
+      height: calc(100vh - 429px);
+      overflow-y: scroll;
+      padding: 0 40px;
+    }
 
     .subnav-content-block{
       margin-bottom: 20px;
@@ -259,20 +244,20 @@
       color: #292929;
     }
 
-    .subnav-btn-wrap{
-      display: flex;
-      align-items: center;
-      margin: 30px 0 30px 20px;
-    }
+    //.subnav-btn-wrap{
+    //  display: flex;
+    //  align-items: center;
+    //  margin: 30px 0 30px 20px;
+    //}
 
-    .subnav-btn{
-      font: 16px/32px 'pt_sansregular',sans-serif;
-      color: #A4A7AB;
-      padding: 4px 26px;
-      background: transparent;
-      border-radius: 25px;
-      border: 1px solid #E8EDF3;
-    }
+    //.subnav-btn{
+    //  font: 16px/32px 'pt_sansregular',sans-serif;
+    //  color: #A4A7AB;
+    //  padding: 4px 26px;
+    //  background: transparent;
+    //  border-radius: 25px;
+    //  border: 1px solid #E8EDF3;
+    //}
   }
 
   .tab-file{
@@ -348,13 +333,13 @@
   .tab-info-wrap{
     position: relative;
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    //display: flex;
+    //align-items: flex-start;
+    //justify-content: space-between;
 
     .tab-info-block{
       background: #fff;
-      width: 49%;
+      width: 100%;
     }
     .tab-info-right{
       width: 49%;
