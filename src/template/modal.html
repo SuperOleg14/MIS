@@ -1,26 +1,26 @@
-<!--<div class="modal fade" id="delete-visit" tabindex="-1" role="dialog" aria-labelledby="deleteVisitModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered delete-visit" role="document">
+<div class="modal fade" id="cancel-visit" tabindex="-1" role="dialog" aria-labelledby="cancelVisitModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-personal-edit" role="document">
         <div class="modal-content">
-            &lt;!&ndash;            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <!--            <div class="modal-header">
+                            <h5 class="modal-title" id="cancelModalLongTitle">Modal title</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>&ndash;&gt;
+                        </div>-->
             <div class="modal-body">
-                <p class="modal-body-title">Ви дійсно бажаєте видалити цей прийом?</p>
+                <p class="modal-body-title">Ви дійсно бажаєте відмінити цей прийом?</p>
                 <p class="modal-body-desc">(Всі введені дані будуть видалені)</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn-confirm modal-btn">Так</button>
-                <button type="button" class="btn-close modal-btn" data-dismiss="modal">Відміна</button>
+                <button type="button" class="btn-close modal-btn" data-dismiss="modal">Ні</button>
             </div>
         </div>
     </div>
-</div>-->
+</div>
 
 <div class="modal fade" id="delete-visit" tabindex="-1" role="dialog" aria-labelledby="deleteVisitModalTitle" aria-hidden="true">
-    <!--УДАЛИТЬ КЛАССЫ 2 ПОСЛЕДНИХ-->   <div class="modal-dialog modal-dialog-centered delete-visit modal-personal-edit" role="document"><!--УДАЛИТЬ КЛАССЫ 2 ПОСЛЕДНИХ-->
+    <!--УДАЛИТЬ КЛАССЫ 2 ПОСЛЕДНИХ-->   <div class="modal-dialog modal-dialog-centered modal-personal-edit" role="document"><!--УДАЛИТЬ КЛАССЫ 2 ПОСЛЕДНИХ-->
         <div class="modal-content">
             <div class="modal-header grey-bg display-flex">
                 <h5 class="modal-title" id="exampleModalLongTitle">Видалення прийому</h5>
@@ -106,7 +106,7 @@
             <button type="button" class="btn-confirm modal-btn btn-blue">Видалити</button>
         </div>
     </div>
-</div>
+    </div>
 </div>
 
 <div class="modal fade" id="personal-info" tabindex="-1" role="dialog" aria-labelledby="personalInfoModalTitle" aria-hidden="true">
@@ -224,6 +224,13 @@
 <div class="modal fade" id="blood-test" tabindex="-1" role="dialog" aria-labelledby="bloodTestModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-personal-edit" role="document">
         <div class="modal-content">
+            <div class="modal-btn-rt display-flex">
+                <a href="" class="subnav-btn-link subnav-btn-download"></a>
+                <a href="" class="subnav-btn-link subnav-btn-print"></a>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
 <!--            <div class="modal-header grey-bg display-flex">
                 <h5 class="modal-title" id="bloodTestCenterTitle"></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -236,6 +243,390 @@
            <!-- <div class="modal-footer">
                 <button type="button" class="btn-confirm modal-btn btn-blue" data-dismiss="modal">Зберегти</button>
             </div>-->
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="alegroanamnesis" tabindex="-1" role="dialog" aria-labelledby="alegroanamnesisModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-personal-edit" role="document">
+        <div class="modal-content">
+            <div class="modal-header grey-bg display-flex">
+                <h5 class="modal-title" id="alegroanamnesisCenterTitle">Обновити алергоанамнез</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body without-add">
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Клінічний статус cтану алергії
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <select>
+                                <option selected>Активна</option>
+                                <option>Пасивна</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-block-two display-flex">
+                    <div class="modal-block-item">
+                        <div class="modal-item-left">
+                            <h3 class="modal-block-title">
+                                Алергія чи непереносимість
+                            </h3>
+                            <p class="modal-input-wrap">
+                                <select>
+                                    <option selected>Алергія</option>
+                                    <option>Алергія</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-block-item">
+                        <div class="modal-item-left">
+                            <h3 class="modal-block-title">
+                                Вид алергії
+                            </h3>
+                            <p class="modal-input-wrap">
+                                <select>
+                                    <option selected>Попередній</option>
+                                    <option>Попередній</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-block-two display-flex">
+                    <div class="modal-block-item">
+                        <div class="modal-item-left">
+                            <h3 class="modal-block-title">
+                                Ризик розвитку важких станів при алергії
+                            </h3>
+                            <p class="modal-input-wrap">
+                                <select>
+                                    <option selected>Низький</option>
+                                    <option>Низький</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-block-item">
+                        <div class="modal-item-left">
+                            <h3 class="modal-block-title">
+                                Категорія алергії
+                            </h3>
+                            <p class="modal-input-wrap">
+                                <select>
+                                    <option selected>Харчова</option>
+                                    <option>Харчова</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Код алергії
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="Алерген/речовина">
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Дата або вік, коли була виявлена
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="16.12.1975 (41 рік)">
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-block-item">
+                    <div class="modal-item-left">
+                        <h3 class="modal-block-title">
+                            Першоджерело даних про алергію
+                        </h3>
+                        <p class="modal-input-wrap">
+                            <select>
+                                <option selected>Харчова</option>
+                                <option>Харчова</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-confirm modal-btn btn-blue" data-dismiss="modal">Зберегти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="immunization" tabindex="-1" role="dialog" aria-labelledby="immunizationModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-personal-edit" role="document">
+        <div class="modal-content">
+            <div class="modal-header grey-bg display-flex">
+                <h5 class="modal-title" id="immunizationCenterTitle">Обновити імунізацію</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body without-add">
+                    <div class="modal-immun-scroll">
+                    <div class="modal-block-item">
+                        <div class="modal-item-left">
+                            <h3 class="modal-block-title">
+                                Вакцина
+                            </h3>
+                            <p class="modal-input-wrap">
+                                <input type="text" class="modal-input" value="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-block-item">
+                        <div class="modal-item-left">
+                            <h3 class="modal-block-title">
+                                Виробник
+                            </h3>
+                            <p class="modal-input-wrap">
+                                <input type="text" class="modal-input" value="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-block-two display-flex">
+                        <div class="modal-block-item">
+                            <div class="modal-item-left">
+                                <h3 class="modal-block-title">
+                                    Серія
+                                </h3>
+                                <p class="modal-input-wrap">
+                                    <input type="text" class="modal-input" value="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-block-item">
+                            <div class="modal-item-left">
+                                <h3 class="modal-block-title">
+                                    Дата
+                                </h3>
+                                <p class="modal-input-wrap">
+                                    <input type="text" class="modal-input" value="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-block-item">
+                        <div class="modal-item-left">
+                            <h3 class="modal-block-title">
+                                Першоджерело даних про щеплення
+                            </h3>
+                            <p class="modal-input-wrap">
+                                <select>
+                                    <option selected>Харчова</option>
+                                    <option>Харчова</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-block-item">
+                        <p class="modal-input-wrap">
+                            <input type="text" class="modal-input" value="">
+                        </p>
+                    </div>
+                    <div class="modal-additional-info">
+                        <div class="modal-additional-info-hidden">
+                            <div class="modal-block-two display-flex">
+                                <div class="modal-block-item">
+                                    <div class="modal-item-left">
+                                        <h3 class="modal-block-title">
+                                            Шлях введення вакцини
+                                        </h3>
+                                        <p class="modal-input-wrap">
+                                            <select>
+                                                <option selected></option>
+                                                <option></option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-block-item">
+                                    <div class="modal-item-left">
+                                        <h3 class="modal-block-title">
+                                            Величина дози/мг
+                                        </h3>
+                                        <p class="modal-input-wrap">
+                                            <input type="text" class="modal-input" value="">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-block-item">
+                                <div class="modal-item-left">
+                                    <h3 class="modal-block-title">
+                                        Причина імунізації
+                                    </h3>
+                                    <p class="modal-input-wrap">
+                                        <input type="text" class="modal-input" value="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-block-item">
+                                <div class="modal-item-left">
+                                    <h3 class="modal-block-title">
+                                        Реакція на щеплення
+                                    </h3>
+                                    <p class="modal-input-wrap">
+                                        <input type="text" class="modal-input" value="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-block-item">
+                                <div class="modal-item-left">
+                                    <h3 class="modal-block-title">
+                                        Протокол вакцинації
+                                    </h3>
+                                    <p class="modal-input-wrap">
+                                        <input type="text" class="modal-input" value="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-block-item">
+                                <div class="modal-item-left">
+                                    <h3 class="modal-block-title">
+                                        Протокол вакцинації, статус дози
+                                    </h3>
+                                    <p class="modal-input-wrap">
+                                        <input type="text" class="modal-input" value="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-block-item">
+                                <div class="modal-item-left">
+                                    <h3 class="modal-block-title">
+                                        Протокол вакцинації, статус дози - пояснення
+                                    </h3>
+                                    <p class="modal-input-wrap">
+                                        <input type="text" class="modal-input" value="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-block-item">
+                                <div class="modal-item-left">
+                                    <h3 class="modal-block-title">
+                                        Дата введення вакцини
+                                    </h3>
+                                    <p class="modal-input-wrap">
+                                        <input type="text" class="modal-input" value="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-block-item toggle-add-info">
+                            <button type="button" class="btn-add-info"></button>
+                            <span class="">Додаткова інформація</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-confirm modal-btn btn-blue" data-dismiss="modal">Зберегти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="anamnesis-live" tabindex="-1" role="dialog" aria-labelledby="anamnesisLiveModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-personal-edit" role="document">
+        <div class="modal-content">
+            <div class="modal-header grey-bg display-flex">
+                <h5 class="modal-title" id="anamnesisLiveCenterTitle">Обновити анамнез життя</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
+                    <div class="modal-block-wrap">
+                        <div class="modal-block-item">
+                            <div class="modal-item-left">
+                                <h3 class="modal-block-title">
+                                    Відомості про травми, операції та ін.
+                                </h3>
+                                <p class="modal-input-wrap">
+                                    <select>
+                                        <option selected>Травми</option>
+                                        <option>Травми</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="modal-item-right display-flex">
+                                <button type="button" class="modal-add">+</button>
+                            </div>
+                        </div>
+                        <div class="modal-comment">
+                            <p class="modal-input-wrap">
+                                <input type="text" class="modal-input" placeholder="Коментар">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-block-wrap">
+                        <div class="modal-block-item">
+                            <div class="modal-item-left">
+                                <h3 class="modal-block-title">
+                                    Спадковість
+                                </h3>
+                                <p class="modal-input-wrap">
+                                    <select>
+                                        <option selected>Не обтяжена</option>
+                                        <option>Обтяжена</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="modal-item-right display-flex">
+                                <button type="button" class="modal-add">+</button>
+                            </div>
+                        </div>
+                        <div class="modal-comment">
+                            <p class="modal-input-wrap">
+                                <input type="text" class="modal-input" placeholder="Коментар">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-block-wrap">
+                        <div class="modal-block-item">
+                            <div class="modal-item-left">
+                                <h3 class="modal-block-title">
+                                    Шкідливі звички та фактор ризику
+                                </h3>
+                                <p class="modal-input-wrap">
+                                    <select>
+                                        <option selected>Куріння</option>
+                                        <option>Куріння</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="modal-item-right display-flex">
+                                <button type="button" class="modal-add">+</button>
+                            </div>
+                        </div>
+                        <div class="modal-comment">
+                            <p class="modal-input-wrap">
+                                <input type="text" class="modal-input" placeholder="Коментар">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-confirm modal-btn btn-blue" data-dismiss="modal">Зберегти</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

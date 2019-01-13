@@ -844,7 +844,7 @@
         <div class="tab-pane fade tab-file" id="tab-file">
             <div class="tab-file-wrap">
                 <div class="tab-file-block">
-                    <p class="tab-file-block-title grey-bg">Аналізи</p>
+                    <p class="grey-bg">Аналізи</p>
                     <div class="tab-file-content">
                         <a href="#" class="tab-file-add">
 							<span class="tab-file-item">
@@ -859,11 +859,11 @@
                     </div>
                 </div>
                 <div class="tab-file-block">
-                    <p class="tab-file-block-title grey-bg">Обстеження</p>
+                    <p class="grey-bg">Обстеження</p>
                     <div class="tab-file-content"></div>
                 </div>
                 <div class="tab-file-block">
-                    <p class="tab-file-block-title grey-bg">Консультації</p>
+                    <p class="grey-bg">Консультації</p>
                     <div class="tab-file-content">
                         <a href="#" class="tab-file-add">
 							<span class="tab-file-item">
@@ -878,7 +878,7 @@
                     </div>
                 </div>
                 <div class="tab-file-block">
-                    <p class="tab-file-block-title grey-bg">Інше</p>
+                    <p class="grey-bg">Інше</p>
                     <div class="tab-file-content">
                         <a href="#" class="tab-file-add">
 							<span class="tab-file-item">
@@ -900,21 +900,67 @@
         </div>
         <div class="tab-pane fade" id="tab-anamnesis">
             <div class="tab-anamnesis-wrap">
-                <p class="tab-anamnesis-title">Алергологічний анамнез</p>
-                <!--<div class="tab-anamnesis-content">
-                    <div>
-                        <input type="checkbox" class="" id="not-weight">
-                        <label for="not-weight">Не обтяжений</label>
+
+                <div class="tab-anamnesis-block">
+                    <div class="display-flex tab-block-title grey-bg">
+                        <p class="">Анамнез життя</p>
+                        <button type="button" class="btn-edit" data-toggle="modal" data-target="#anamnesis-live"></button>
                     </div>
-                    <div>
-                        <input type="checkbox" class="" id="weight">
-                        <label for="weight">Обтяжений</label>
+                    <div class="tab-block-content">
+                        <div class="tab-block-item">
+                            <p class="tab-block-item-title">
+                                Відомості про травми, операції та ін.
+                            </p>
+                            <div class="tab-block-subitem">
+                                <p>Травми:</p>
+                                <p>Коментар де, коли і які були травми</p>
+                            </div>
+                            <div class="tab-block-subitem">
+                                <p>Операції:</p>
+                                <p>Коментар де, коли і які були операції</p>
+                            </div>
+                        </div>
+                        <div class="tab-block-item">
+                            <p class="tab-block-item-title">
+                                Спадковість
+                            </p>
+                            <div class="tab-block-subitem">
+                                Не обтяжена
+                            </div>
+                        </div>
+                        <div class="tab-block-item">
+                            <p class="tab-block-item-title">
+                                Шкідливі звички та фактори ризику
+                            </p>
+                            <div class="tab-block-subitem">
+                                Куріння
+                            </div>
+                        </div>
                     </div>
-                </div>-->
-                <!--<div class="tab-info-right-block">
-                    <div class="display-flex tab-info-title grey-bg">
+                </div>
+
+                <div class="tab-anamnesis-block">
+                    <div class="display-flex tab-block-title grey-bg">
+                        <p class="">Імунізація</p>
+                        <button type="button" class="btn-edit" data-toggle="modal" data-target="#immunization"></button>
+                    </div>
+                    <div class="tab-block-content">
+                        mnjnadsjf asfj n
+                    </div>
+                </div>
+
+                <div class="tab-anamnesis-block">
+                    <div class="display-flex tab-block-title grey-bg">
                         <p class="">Алергоанамнез</p>
-                        <button type="button" class="personal-edit" data-toggle="modal" data-target="#alegro"></button>
+                        <button type="button" class="btn-edit" data-toggle="modal" data-target="#alegroanamnesis"></button>
+                    </div>
+                    <div class="tab-block-content">
+                    </div>
+                </div>
+                <!--<div class="tab-info-right-block">
+                    <div class="display-flex tab-block-title grey-bg">
+                        <p class="">Алергоанамнез</p>
+                        <button type="button" class="btn-edit" data-toggle="modal" data-target="#alegro"></button>
                     </div>
                     <div class="tab-info-content">
                         <div class="tab-info-flex">
@@ -935,9 +981,9 @@
         <div class="tab-pane fade" id="tab-info">
             <div class="tab-info-wrap">
                 <div class="tab-info-block">
-                    <div class="display-flex tab-info-title grey-bg">
+                    <div class="display-flex tab-block-title grey-bg">
                         <p class="">Персональна інформація</p>
-                        <button type="button" class="personal-edit" data-toggle="modal" data-target="#personal-info"></button>
+                        <button type="button" class="btn-edit" data-toggle="modal" data-target="#personal-info"></button>
                     </div>
                     <div class="tab-info-content">
                         <div class="tab-info-flex">
@@ -964,9 +1010,9 @@
                 </div>
                 <div class="tab-info-right">
                     <!--<div class="tab-info-right-block">
-                        <div class="display-flex tab-info-title grey-bg">
+                        <div class="display-flex tab-block-title grey-bg">
                             <p class="">Алергоанамнез</p>
-                            <button type="button" class="personal-edit" data-toggle="modal" data-target="#alegro"></button>
+                            <button type="button" class="btn-edit" data-toggle="modal" data-target="#alegro"></button>
                         </div>
                         <div class="tab-info-content">
                             <div class="tab-info-flex">
@@ -983,9 +1029,9 @@
                         </div>
                     </div>-->
                     <!--<div class="tab-info-right-block">
-                        <div class="display-flex tab-info-title grey-bg">
+                        <div class="display-flex tab-block-title grey-bg">
                             <p class="">Імунізація</p>
-                            <button type="button" class="personal-edit" data-toggle="modal" data-target="#vaccination "></button>
+                            <button type="button" class="btn-edit" data-toggle="modal" data-target="#vaccination "></button>
                         </div>
                         <div class="tab-info-content">
                             <div class="tab-info-flex">
